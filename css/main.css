@@ -1,0 +1,173 @@
+@import url('some google sans-serif font');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+html{
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    background-color: background-color: rgb(210, 90, 90);
+}
+main{
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid #aaa;
+}
+header {
+    background-image: url(../img/quinn.jpg);
+    color: white;
+}
+.search-btn {
+    height: 25px;
+    width: 200px; 
+    border-radius: 8px;
+    background-color: rgb(210, 90, 90);
+    color: white;
+}
+input {
+    padding: 0.5rem;
+}
+.form-box {
+    margin: 1rem;
+}
+
+input#min.price::after{
+    content: "$" attr(data-price);
+    display: block;
+    margin-top: -1.5rem;
+}
+input.price#max::after{
+    content: "$" attr(data-price);
+    display: block;
+    margin-top: -1.5rem;
+ 
+}
+h1 {
+    text-shadow: 2px 2px black;
+}
+.place {
+    
+}
+.check-in {
+    
+}
+.check-out {
+    
+}
+.min-price {
+    
+}
+.max-price {
+    
+}
+.dogs {
+    
+}
+.search {
+    
+}
+@media (min-width: 600px) and (max-width:999px) {
+    form{
+        display: grid;
+        grid-template-areas: 
+            "x x"
+            "y z"
+            "r t"
+            "d s";
+        grid-template-columns: 1fr 1fr;
+    }   
+    .form-box {
+        display: flex;
+        flex-direction: column;
+           
+    } 
+    .place {
+    grid-area: x;
+}
+.check-in {
+    grid-area: y;
+}
+.check-out {
+    grid-area: z;
+}
+.min-price {
+    grid-area: r;
+}
+.max-price {
+    grid-area: t;
+}
+.dogs {
+    grid-area: d;
+}
+.search {
+    grid-area: s;
+}
+    .search-btn{
+        margin-top: 2rem;
+        margin-right: 5rem;
+    }
+    
+}
+@media (max-width: 599px) {
+    .form-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+
+
+@media (min-width: 1000px){ 
+        form{
+        display: grid;
+        grid-template-areas: 
+            "x x"
+            "y z"
+            "r t"
+            "d s";
+        grid-template-columns: 1fr 1fr;
+    }   
+    .form-box {
+        display: flex;
+        flex-direction: column;
+           
+    } 
+    .place {
+    grid-area: x;
+}
+.check-in {
+    grid-area: y;
+}
+.check-out {
+    grid-area: z;
+}
+.min-price {
+    grid-area: r;
+}
+.max-price {
+    grid-area: t;
+}
+.dogs {
+    grid-area: d;
+}
+.search {
+    grid-area: s;
+}
+    .search-btn{
+        margin-top: 2rem;
+        margin-right: 5rem;
+    }
+    header {
+        float: left;
+        height: 430px;
+    
+}
+
